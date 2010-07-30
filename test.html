@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Testing the Microphone</title>
+  
+  <style type="text/css" media="screen">
+    tr.selected { background: yellow; }
+  </style>
+  
+  <script type="text/javascript" src="jquery-1.4.2.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jquery.shift-select-table.js" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $("#test-table").shiftSelectTable();
+    });
+  </script>
+</head>
+<body>
+
+  <table border="0" cellspacing="5" cellpadding="5" id="test-table">
+    <tr>
+      <th>&nbsp;</th>
+      <th>Header</th></tr>
+    <tr>
+      <td><input type="checkbox" id="inside-1"/></td>
+      <td>Data 1</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="inside-2" checked="checked"/></td>
+      <td>Data 2</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="inside-3"/></td>
+      <td>Data 3</td>
+    </tr>
+  </table>
+
+<div style="display: none"><input type="checkbox" id="outside-1"/></div>
+
+</body>
+</html>
